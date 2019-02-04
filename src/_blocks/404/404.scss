@@ -1,0 +1,64 @@
+.not-found {
+  background: #aca0ae url(#{$path}/img/promo/bg-big.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: calc(100vh - 59px);
+  text-align: center;
+  position: relative;
+  z-index: 5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+  }
+
+  .wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.not-found__name {
+  font-size: 12.5em;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0 0 13px;
+}
+
+.not-found__title {
+  font-size: 2.25em;
+  line-height: 1.33;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+
+.not-found__link {
+  color: inherit;
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: $orange;
+}
+
+@media #{$s} {
+  .not-found__name {
+    font-size: 30vw;
+    margin: 0 0 1vw;
+  }
+
+  .not-found__title {
+    font-size: 4vw;
+    margin: 0 0 2vw;
+  }
+
+  .not-found__link {
+    font-size: 1.2em;
+  }
+}

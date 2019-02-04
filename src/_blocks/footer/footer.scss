@@ -1,0 +1,20 @@
+.footer {
+  background: $col;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.33;
+  padding: 22px 0;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media #{$t} {
+
+}
+
+@media #{$s} {
+
+}

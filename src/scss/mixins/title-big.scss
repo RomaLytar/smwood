@@ -1,0 +1,26 @@
+@mixin title-big($margin: 0,
+             $text-align: left,
+             $font-size: 60px,
+             $font-weight: 700,
+             $line-height: 1.4,
+             $color: #ffffff,
+             $text-transform: uppercase) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin: $margin;
+  text-align: $text-align;
+  color: $color;
+  text-transform: $text-transform;
+
+
+  @media #{$t} {
+
+  }
+
+  @media #{$s} {
+    font-size: 42px;
+    line-height: 1.43;
+    text-align: center;
+  }
+}

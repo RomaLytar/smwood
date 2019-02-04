@@ -1,0 +1,142 @@
+.products {
+  margin: 80px 0;
+  text-align: center;
+
+  &--page {
+    margin-bottom: 40px;
+  }
+}
+
+.products__list-wrap {
+  background: url("#{$path}/img/products/bg.jpg") repeat-x 5% 0;
+  background-size: auto 100%;
+  padding: 40px 0 1px;
+  margin: 0 0 40px;
+}
+
+.products__title {
+  margin: 80px 0;
+}
+
+.products__list {
+  margin: 0 -10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  &--main {
+    @include wrap;
+  }
+}
+
+.products__item {
+  background: #ffffff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.21);
+  padding: 35px 10px 30px;
+  width: 32%;
+  margin: 0 2% 40px 0;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.products__img {
+  display: block;
+  height: 110px;
+  max-width: 150px;
+  margin: 0 auto 18px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+
+    .object-fit & {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.products__item-btn {
+  min-width: 150px;
+}
+
+.products__item-info {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.products__item-title {
+  @include title-second($text-align: center);
+  min-height: 2em;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.products__item-price {
+  margin: 0 0 40px;
+  font-weight: 700;
+  color: $orange;
+}
+
+@media #{$s} {
+  .products {
+    margin: 30px 0;
+    padding: 30px 0;
+    background: #ebe8e2;
+
+    &--page {
+      margin-bottom: 30px;
+    }
+  }
+
+  .products__list-wrap {
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .products__title {
+    margin: 0 0 30px;
+  }
+
+  .products__list {
+    margin: 0 0 20px;
+    justify-content: center;
+  }
+
+  .products__item {
+    min-width: 293px;
+
+    padding: 30px 10px;
+    width: 31%;
+    margin: 0 1% 30px;
+  }
+
+  .products__item-info {
+    max-width: 240px;
+  }
+
+  .products__item-price {
+    margin: 0 0 30px;
+  }
+}

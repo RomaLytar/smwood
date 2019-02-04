@@ -1,0 +1,22 @@
+@mixin title-second($margin: 0,
+             $text-align: left,
+             $font-size: 18px,
+             $font-weight: 700,
+             $line-height: 1.56,
+             $text-transform: none) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin: $margin;
+  text-align: $text-align;
+  text-transform: $text-transform;
+
+  @media #{$t} {
+
+  }
+
+  @media #{$s} {
+    font-size: 16px;
+    line-height: 1.38;
+  }
+}

@@ -1,0 +1,23 @@
+@mixin title($margin: 0 0 40px,
+             $text-align: center,
+             $font-size: 34px,
+             $font-weight: 700,
+             $line-height: 1.38,
+             $text-transform: uppercase) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin: $margin;
+  text-align: $text-align;
+  text-transform: $text-transform;
+
+  @media #{$t} {
+
+  }
+
+  @media #{$s} {
+    font-size: 24px;
+    line-height: 1.42;
+    margin: 0 0 27px;
+  }
+}

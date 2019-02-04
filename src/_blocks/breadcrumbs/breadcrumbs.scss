@@ -1,0 +1,47 @@
+.breadcrumbs {
+  margin: 40px 0 80px;
+}
+
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $col-light;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    position: relative;
+
+    &:not(:last-child) {
+      &::after {
+        content: "|";
+        margin: 0 4px 0 0;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+
+    &:not([href]) {
+      color: $orange;
+    }
+
+    &:hover {
+      &[href] {
+        color: $orange;
+      }
+    }
+  }
+}
+
+@media #{$s} {
+  .breadcrumbs {
+    margin: 30px 0;
+  }
+}

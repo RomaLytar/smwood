@@ -1,0 +1,20 @@
+{
+  "name": "Rent apartment",
+  "short_name": "Rent apartment",
+  "description": "Rent apartment",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "orientation": "any",
+  "theme_color": "#e38523",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg"
+    }
+  ]
+}

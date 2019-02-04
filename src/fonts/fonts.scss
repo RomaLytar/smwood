@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Lato";
+    font-display: swap;
+    font-weight: 700;
+    src: url("#{$path}/fonts/LatoBold.woff2") format("woff2"),
+         url("#{$path}/fonts/LatoBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-display: swap;
+    src: url("#{$path}/fonts/LatoRegular.woff2") format("woff2"),
+         url("#{$path}/fonts/LatoRegular.woff") format("woff");
+}
